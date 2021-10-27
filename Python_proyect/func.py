@@ -14,3 +14,9 @@ print("El archivo existe")
 dll = c.CDLL(ruta_dll)
 """Invocamos a la variable que guarda la ruta a la funcion desde la libreria invicada"""
 dll.main()
+
+# Compilacion para las librerias 
+# gcc -c -FPIC test.c
+# gcc -shared test.o -o test.dll
+
+# Cin estos comendos se crean las librerias en windows .dll
